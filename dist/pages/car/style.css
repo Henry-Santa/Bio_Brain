@@ -1,0 +1,63 @@
+body{
+    margin:0;
+    background: linear-gradient(#00ff00, #ff00ff);;
+    overflow: hidden;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; min-height: 100vh;
+}
+#verticalButtons{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 100%;
+}
+
+button{
+    border: none;
+    border-radius: 8px;
+    padding: 7px 7px 7px 7px;
+    margin: 2px;
+    cursor: pointer;
+    font-size: 2vw;
+    white-space: nowrap;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+button:hover{
+    background: rgb(38, 44, 47);
+}
+
+button:active{
+    background: rgb(61, 81, 92)
+}
+
+#networkCanvas{
+    background: black;
+    border-radius: 3%;
+}
+#carCanvas{
+    background: rgb(33, 33, 33);
+}
+
+.range-slider {
+
+    .input-range {
+      -webkit-appearance: none;
+      height: 200px;
+      accent-color: rgba(7, 197, 29, 0.5);
+      border-radius: 5px;
+      background: #ccc;
+      outline: none;
+      writing-mode: bt-lr; /* IE */
+      -webkit-appearance: slider-vertical; /* WebKit */
+      
+    }
+  }
+
+.container { 
+    background-color: rgba(0, 0, 0, 0.7); padding: 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); text-align: center;
+
+}

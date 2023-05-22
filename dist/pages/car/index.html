@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+    <title>Cars</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <canvas id="carCanvas"></canvas>
+    
+    
+    <canvas id="networkCanvas"></canvas>
+
+    <div class="container">
+        <div>
+            <h1 id="name" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: aliceblue; user-select: none;">null</h1>
+            <div class="range-slider">
+                <input id="bias" class="input-range" orient="vertical" type="range" step="0.0001" value="0.5" min="-1" max="1">
+            </div> 
+                <div class="container">
+                    <h1 id="win" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: aliceblue; user-select: none;">Can Win</h1>
+                </div>
+                
+        </div>
+        
+    </div>
+    <div class="container">
+        <div id="verticalButtons" >
+            <button onclick="save()">💾</button>
+            <button onclick="discard()">🗑️</button>
+            <button onclick="drive()">🚗</button>
+            <button onclick="refresh()">⟳</button>
+        </div>
+    </div>
+    
+    
+    
+    
+
+    <script src="./utils.js"></script>
+    <script src="./visualizer.js"></script>
+    <script src="./network.js"></script>
+    <script src="./sensor.js"></script>
+    <script src="./road.js"></script>
+    <script src="./controls.js"></script>
+    <script src="./car.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
