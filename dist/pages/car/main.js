@@ -24,6 +24,7 @@ const message = {
 try{url=new URL(window.location.origin)} catch{}
 
 if (url != "null"){
+    try{
     const ws = new WebSocket("ws" + url.origin.slice(4))
     
     ws.onopen = ((e) => {
@@ -45,7 +46,7 @@ if (url != "null"){
         else { alert("please save the brain and run the car again without any changes")}
         
         
-    });
+    });} catch {}
 }
 
 
