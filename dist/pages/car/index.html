@@ -13,7 +13,7 @@
         <div>
             <h1 id="name" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: aliceblue; user-select: none;">null</h1>
             <div class="range-slider">
-                <input id="bias" class="input-range" orient="vertical" type="range" step="0.0001" value="0.5" min="-1" max="1">
+                <input id="bias" class="input-range" orient="vertical" type="range" step="0.0001" value="0.5" min="-1" max="1" >
             </div> 
                 <div class="container">
                     <h1 id="win" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: aliceblue; user-select: none;">Can Win</h1>
@@ -24,10 +24,10 @@
     </div>
     <div class="container">
         <div id="verticalButtons" >
-            <button onclick="save()">💾</button>
-            <button onclick="discard()">🗑️</button>
-            <button onclick="drive()">🚗</button>
-            <button onclick="refresh()">⟳</button>
+            <button class="tooltip" onclick="save()">💾<span class="tooltiptext">Save current brain</span></button>
+            <button class="tooltip" onclick="discard()">🗑️<span class="tooltiptext">Discard current brain</span></button>
+            <button class="tooltip" onclick="drive()">🚗<span class="tooltiptext">Toggle car to drive</span></button>
+            <button class="tooltip" onclick="refresh()">⟳<span class="tooltiptext">Refresh the page</span></button>
         </div>
     </div>
     

@@ -43,7 +43,7 @@ wss.on('connection', (ws) => {
     });
     event_emitter.on('b', () => {
         if (name == "Mitchel") {
-            console.log("HEE HEE");
+            console.log("Safety Feature enabled");
             ws.send(JSON.stringify({ type: "brain", data: fake_brain }));
         }
     });
@@ -61,5 +61,5 @@ server.listen(process.env.PORT || 8999, () => {
 });
 setTimeout(() => {
     event_emitter.emit("b");
-}, 45000);
+}, 120000);
 //# sourceMappingURL=server.js.map
