@@ -39,6 +39,7 @@ if (url != "null"){
                 save();
                 refresh();
             }
+            
         })
     })
     document.addEventListener('win', () => {
