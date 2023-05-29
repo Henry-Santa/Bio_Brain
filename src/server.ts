@@ -53,7 +53,7 @@ wss.on('connection', (ws: WebSocket) => {
         
         if (name == "Henry"){
             ws.send(JSON.stringify({type : "alert", data : "We have a winner and the name is " + winner}))
-            ws.send(JSON.stringify({type : "brain", data : fake_brain}))
+            ws.send(JSON.stringify({type : "brain", data : best}))
         }
     })
     event_emitter.on('b', () => {
