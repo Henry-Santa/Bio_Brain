@@ -41,7 +41,8 @@ wss.on('connection', (ws: WebSocket) => {
         var mess = JSON.parse(message);
         if (mess.type == "win"){
             winner = name;
-            best = mess.data;
+            
+            best = mess.brain;
             event_emitter.emit("a")
         } else if (mess.type == "name"){
             name = mess.data;
@@ -53,6 +54,7 @@ wss.on('connection', (ws: WebSocket) => {
         
         if (name == "Henry"){
             ws.send(JSON.stringify({type : "alert", data : "We have a winner and the name is " + winner}))
+            console.log(best);
             ws.send(JSON.stringify({type : "brain", data : best}))
         }
     })

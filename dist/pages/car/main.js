@@ -31,13 +31,14 @@ if (url != "null"){
         ws.send(JSON.stringify(message));
         console.log("Connected")
         ws.onmessage = ((m) =>{
+            console.log(m);
             var my_message = JSON.parse(m.data);
             if (my_message.type == "alert"){
                 alert(my_message.data);
             } else if (my_message.type == "brain"){
                 bestCar.brain = my_message.data;
                 save();
-                refresh();
+                //refresh();
             }
             
         })
